@@ -1,0 +1,15 @@
+/* gap separar grid
+grid auto-fill sirve para llenar la cantidad de columas que entren */
+.moviesGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 230px);
+  gap: 30px;
+  padding: 30px;
+  justify-content: center;
+}
+
+@media (max-width: 560px) {
+  .moviesGrid {
+    grid-template-columns: 100%;
+  }
+}
